@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    height: 2rem;
+  }
+
+  .links {
+    text-decoration: none;
+    color: black;
+  }
+
+  .links:hover {
+    text-decoration: underline;
+  }
+
+  .details-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  .phone-container {
+    width: 30rem;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media (max-width: 400px) {
+    .links {
+        font-size: 0.7rem;
+    }
+}
+    
+
+
+ 
